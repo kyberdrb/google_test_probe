@@ -5,8 +5,8 @@
 namespace {
 class TestPerson : public ::testing::Test {
     protected:
-        Person *person_22_years_old;
-        Person *person_58_years_old;
+        Person *person_22_years_old = nullptr;
+        Person *person_58_years_old = nullptr;
 
         void SetUp() override
         {
